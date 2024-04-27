@@ -26,7 +26,7 @@ RUN apt-get update && \
     /tmp/SoulseekQt-2018-1-30-64bit.AppImage --appimage-extract && \
     mv /squashfs-root /app && \
     strip /app/SoulseekQt && \
-    useradd -u 1000 -U -d /data -s /bin/false soulseek && \
+    useradd -u 2000 -U -d /data -s /bin/false soulseek && \
     usermod -G users soulseek && \
     mkdir /data && \
     apt-get purge -y binutils curl dbus patch && \
